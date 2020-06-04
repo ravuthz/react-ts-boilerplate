@@ -1,0 +1,48 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "prettier": true,
+    "no-console": [true, "warning"],
+    "interface-name": [true, "never-prefix"],
+    "no-implicit-dependencies": [false, "dev"],
+    "class-name": false,
+    "export-name": false,
+    "forin": false,
+    "label-position": false,
+    "member-access": true,
+    "no-arg": false,
+    "no-construct": false,
+    "no-duplicate-variable": false,
+    "no-submodule-imports": false,
+    "no-eval": false,
+    "no-internal-module": true,
+    "no-shadowed-variable": true,
+    "no-switch-case-fall-through": true,
+    "no-unused-expression": true,
+    "semicolon": true,
+    "trailing-comma": false,
+    "typedef": [true, "variable-declaration"],
+    "typedef-whitespace": false,
+    "variable-name": false,
+    "whitespace": false,
+    "ordered-imports": true,
+    "max-line-length": false,
+    "no-string-literal": false,
+    "object-literal-sort-keys": false,
+    "object-literal-shorthand": false
+  },
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  }
+}

@@ -42,3 +42,30 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+## Generate component using /generate-react-cli
+https://github.com/arminbro/generate-react-cli
+
+```bash
+
+# Generate with npx
+npx generate-react-cli component Counter
+
+# Or install global 
+npm install generate-react-cli -g
+
+generate-react component Header --withTest=false
+generate-react component Footer --withTest=false
+generate-react component NavBar --withTest=false
+
+generate-react component SideBarLayout --type=layout
+generate-react component NoSideBarLayout --type=layout
+generate-react component FullWidthLayout --type=layout
+
+generate-react component HomePage --type=container --withStyle=false
+generate-react component AboutPage --type=container --withStyle=false
+generate-react component ContactPage --type=container --withStyle=false
+
+```
